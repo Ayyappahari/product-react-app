@@ -6,15 +6,24 @@ import './App.css'
 import AddProduct from './components/AddProduct'
 import SearchProduct from './components/SearchProduct'
 import DeleteProduct from './components/DeleteProduct'
-import NavigationBar from './components/NavigationBar'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    
+  
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<AddProduct/>}/>
+      <Route path='/search' element={<SearchProduct/>}/>
+      <Route path='/' element={<DeleteProduct/>}/>
+    </Routes>
+    </BrowserRouter>
     </>
+    
   )
 }
 
