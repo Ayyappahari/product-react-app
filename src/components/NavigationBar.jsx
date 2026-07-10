@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NavigationBar = () => {
   return (
@@ -15,6 +16,8 @@ const NavigationBar = () => {
         <a class="nav-link active" aria-current="page" href="/">Add</a>
         <a class="nav-link" href="/search">Search</a>
         <a class="nav-link" href="/delete">Delete</a>
+        <a class="nav-link" href="/view">View</a>
+
       </div>
     </div>
   </div>
