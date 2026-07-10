@@ -7,6 +7,7 @@ import AddProduct from './components/AddProduct'
 import SearchProduct from './components/SearchProduct'
 import DeleteProduct from './components/DeleteProduct'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import ViewProducts from './components/ViewProducts'
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
     <Routes>
       <Route path='/' element={<AddProduct/>}/>
       <Route path='/search' element={<SearchProduct/>}/>
-      <Route path='/' element={<DeleteProduct/>}/>
+      <Route path='/delete' element={<DeleteProduct/>}/>
+      <Route path='/view' element={<ViewProducts />}/>
     </Routes>
     </BrowserRouter>
     </>
